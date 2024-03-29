@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className="social">
           <a href="https://github.com/Ahmad-Shawish" target="_blank">
             <img
-              src="/githublogo.png"
+              src="./githublogo.png"
               alt=""
               style={{ backgroundColor: "white" }}
             />
@@ -28,11 +28,11 @@ const Navbar = () => {
             href="https://www.linkedin.com/in/ahmad-shawish-129014278"
             target="_blank"
           >
-            <img src="/linkedin.png" alt="" />
+            <img src="./linkedin.png" alt="" />
           </a>
           <a href="https://vsco.co/ahmadshawish/gallery" target="_blank">
             <img
-              src="/vsco.png"
+              src="./vsco.png"
               alt=""
               style={{ objectFit: "contain", backgroundColor: "white" }}
             />
