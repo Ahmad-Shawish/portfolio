@@ -1,0 +1,134 @@
+@import "../../app.scss";
+
+.about {
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  height: 100%;
+  display: flex;
+  //   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4%;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    gap: 50px;
+
+    @include mobile {
+      //   gap: 65px;
+      justify-content: center;
+      //   flex-direction: row;
+    }
+
+    p {
+      font-size: 50px;
+      line-height: 70px;
+
+      @include mobile {
+        font-size: 25px;
+        line-height: 30px;
+      }
+
+      span {
+        font-size: 50px;
+
+        &:hover {
+          color: lightskyblue;
+        }
+        @include mobile {
+          font-size: 25px;
+        }
+      }
+    }
+
+    span {
+      font-size: 40px;
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: row-reverse;
+
+    h1 {
+      writing-mode: vertical-lr;
+      //   text-orientation: sideways-right;
+      font-size: 150px;
+      letter-spacing: 20px;
+
+      &:hover {
+        color: orange;
+      }
+
+      @include mobile {
+        font-size: 44px;
+        letter-spacing: 15px;
+      }
+    }
+
+    ul {
+      width: 350px;
+      text-align: center;
+
+      @include mobile {
+        max-width: 300px;
+      }
+
+      //   span:after,
+      //   span:before {
+      //     content: "\00a0\00a0\00a0\00a0\00a0\00a0";
+      //     text-decoration: line-through;
+      //   }
+
+      span {
+        font-size: 40px;
+        text-align: center;
+        display: flex;
+        color: orange;
+
+        @include mobile {
+          font-size: 24px;
+        }
+      }
+
+      span:after {
+        content: "";
+        flex: 1;
+        border-bottom: 1px solid gray;
+        margin: auto;
+        margin-left: 10px;
+      }
+
+      li {
+        list-style-type: none;
+        font-size: 32px;
+        line-height: 55px;
+        text-align: right;
+        // display: flex;
+        // width: 500px;
+
+        @include mobile {
+          font-size: 20px;
+          line-height: 31px;
+          text-align: center;
+        }
+
+        &:hover {
+          scale: 1.05;
+        }
+      }
+    }
+  }
+}
