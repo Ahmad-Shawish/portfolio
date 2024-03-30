@@ -15,6 +15,7 @@ const items = [
         thumbnailWidth: "100px",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./blog ss2.png",
@@ -22,6 +23,7 @@ const items = [
         thumbnailWidth: "100px",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./blog ss3.png",
@@ -29,6 +31,7 @@ const items = [
         thumbnailWidth: "100px",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./blog ss4.png",
@@ -36,6 +39,7 @@ const items = [
         thumbnailWidth: "100px",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./blog ss5.png",
@@ -43,6 +47,7 @@ const items = [
         thumbnailWidth: "100px",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./blog ss6.png",
@@ -50,6 +55,7 @@ const items = [
         thumbnailWidth: "100px",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./blog ss7.png",
@@ -57,6 +63,7 @@ const items = [
         thumbnailWidth: "100px",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./blog ss8.png",
@@ -64,6 +71,7 @@ const items = [
         thumbnailWidth: "100px",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./blog ss9.png",
@@ -71,10 +79,12 @@ const items = [
         thumbnailWidth: "100px",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
     ],
-    desc: "A blog site built in React, SCSS, MySQL and Express, used JSONWebToken for authenticating and validating users, ReactQuill to let the user use bold, italic, bullets etc",
+    desc: "A blog site built in React, SCSS, MySQL and Express, used JSONWebToken for authorization users, ReactQuill to let the user use bold, italic, bullets etc",
     ghlink: "https://github.com/Ahmad-Shawish/blog",
+    tunnel: "https://sqb9npfb-3000.euw.devtunnels.ms/",
   },
   {
     id: 2,
@@ -86,6 +96,7 @@ const items = [
         thumbnailWidth: "100px",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./movie full popular.png",
@@ -93,6 +104,7 @@ const items = [
         thumbnailWidth: "100px",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./movie ss3.png",
@@ -100,6 +112,7 @@ const items = [
         thumbnailWidth: "100px",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./movie ss4.png",
@@ -107,6 +120,7 @@ const items = [
         thumbnailWidth: "100px",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./movie ss5.png",
@@ -114,6 +128,7 @@ const items = [
         thumbnailWidth: "100px",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./movie ss6.png",
@@ -121,6 +136,7 @@ const items = [
         thumbnailWidth: "100px",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./movie ss7.png",
@@ -128,6 +144,7 @@ const items = [
         thumbnailWidth: "100px",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./movie ss8.png",
@@ -135,10 +152,12 @@ const items = [
         thumbnailWidth: "100px",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
     ],
     desc: "A movie searching site built in React, SCSS, and utilized The Movie Database (TMDB) API",
     ghlink: "https://github.com/Ahmad-Shawish/moviezSearch",
+    tunnel: "https://sqb9npfb-5173.euw.devtunnels.ms/",
   },
   {
     id: 3,
@@ -150,6 +169,7 @@ const items = [
         thumbnailWidth: "100px",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./map ss2.png",
@@ -157,6 +177,7 @@ const items = [
         thumbnailWidth: "100px",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./map ss3.png",
@@ -164,6 +185,7 @@ const items = [
         thumbnailWidth: "100px",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./map ss4.png",
@@ -171,10 +193,12 @@ const items = [
         thumbnailWidth: "100px",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
     ],
     desc: "A site to add pings on the map to tell about visited places and countries with ratings, built with React, CSS, MongoDB, Express, and the map provided by MapBox",
     ghlink: "https://github.com/Ahmad-Shawish/mapPin",
+    tunnel: "https://sqb9npfb-3001.euw.devtunnels.ms/",
   },
   {
     id: 4,
@@ -185,46 +209,54 @@ const items = [
         thumbnail: "./carrent ss1.jpeg",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./carrent ss2.jpeg",
         thumbnail: "./carrent ss2.jpeg",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./carrent ss3.jpeg",
         thumbnail: "./carrent ss3.jpeg",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./carrent ss4.jpeg",
         thumbnail: "./carrent ss4.jpeg",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./carrent ss5.png",
         thumbnail: "./carrent ss5.png",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
         original: "./carrent ss6.png",
         thumbnail: "./carrent ss6.png",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
       {
-        original: "./carrent ss7.png",
-        thumbnail: "./carrent ss7.png",
+        original: "./carrent ss7 (2).png",
+        thumbnail: "./carrent ss7 (2).png",
         thumbnailHeight: "60px",
         originalHeight: "450px",
+        loading: "lazy",
       },
     ],
     desc: "Frontend design only from Figma, built with React and SCSS",
     ghlink: "https://github.com/Ahmad-Shawish/carRent-FEdesignFigma",
+    tunnel: "https://sqb9npfb-5174.euw.devtunnels.ms/",
     flink:
       "https://www.figma.com/community/file/1138316365849534403/car-rent-website-design-pickolab-studio",
   },
@@ -333,9 +365,20 @@ const Single = ({ item }) => {
               )}
             </p>
 
-            <a href={item.ghlink} target="_blank">
-              <button>Source Code</button>
-            </a>
+            <span>
+              info: using a tunnel for live demo so a warning will pop up when
+              accessing the link, feel free to check the pics if you don't trust
+              it
+            </span>
+
+            <div className="btnCont">
+              <a href={item.ghlink} target="_blank">
+                <button>Source Code</button>
+              </a>
+              <a href={item.tunnel} target="_blank">
+                <button>Live Demo</button>
+              </a>
+            </div>
           </motion.div>
         </div>
       </div>
