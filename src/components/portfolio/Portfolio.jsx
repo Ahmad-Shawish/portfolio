@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import ImageGallery from "react-image-gallery";
@@ -82,7 +82,7 @@ const items = [
         loading: "lazy",
       },
     ],
-    desc: "A blog site built in React, SCSS, MySQL and Express, used JSONWebToken for authorization users, ReactQuill to let the user use bold, italic, bullets etc",
+    desc: "A blog site built in React, SCSS, MySQL and Express, used JSONWebToken for authorizing users, ReactQuill to let the user use bold, italic, bullets etc",
     ghlink: "https://github.com/Ahmad-Shawish/blog",
     tunnel: "https://sqb9npfb-3000.euw.devtunnels.ms/",
   },
@@ -260,6 +260,77 @@ const items = [
     flink:
       "https://www.figma.com/community/file/1138316365849534403/car-rent-website-design-pickolab-studio",
   },
+  {
+    id: 5,
+    title: "(React Native) Social App",
+    images: [
+      {
+        original: "./rn-social ss1.png",
+        thumbnail: "./rn-social ss1.png",
+        thumbnailHeight: "60px",
+        originalHeight: "500px",
+        loading: "lazy",
+      },
+      {
+        original: "./rn-social ss2.png",
+        thumbnail: "./rn-social ss2.png",
+        thumbnailHeight: "60px",
+        originalHeight: "500px",
+        loading: "lazy",
+      },
+      {
+        original: "./rn-social ss3.png",
+        thumbnail: "./rn-social ss3.png",
+        thumbnailHeight: "60px",
+        originalHeight: "500px",
+        loading: "lazy",
+      },
+      {
+        original: "./rn-social ss4.png",
+        thumbnail: "./rn-social ss4.png",
+        thumbnailHeight: "60px",
+        originalHeight: "500px",
+        loading: "lazy",
+      },
+      {
+        original: "./rn-social ss5.png",
+        thumbnail: "./rn-social ss5.png",
+        thumbnailHeight: "60px",
+        originalHeight: "500px",
+        loading: "lazy",
+      },
+      {
+        original: "./rn-social ss6.png",
+        thumbnail: "./rn-social ss6.png",
+        thumbnailHeight: "60px",
+        originalHeight: "500px",
+        loading: "lazy",
+      },
+      {
+        original: "./rn-social ss7.png",
+        thumbnail: "./rn-social ss7.png",
+        thumbnailHeight: "60px",
+        originalHeight: "500px",
+        loading: "lazy",
+      },
+      {
+        original: "./rn-social ss8.png",
+        thumbnail: "./rn-social ss8.png",
+        thumbnailHeight: "60px",
+        originalHeight: "500px",
+        loading: "lazy",
+      },
+      {
+        original: "./rn-social ss9.png",
+        thumbnail: "./rn-social ss9.png",
+        thumbnailHeight: "60px",
+        originalHeight: "500px",
+        loading: "lazy",
+      },
+    ],
+    desc: "This is a simple front end React Native project to get started and familiarize myself with it, the design is basic and straight forward with plans to continue on it and add the backend. Made with Expo, Expo Router and NativeWind(Tailwind for React Native)",
+    ghlink: "https://github.com/Ahmad-Shawish/RN-Social",
+  },
 ];
 
 const Single = ({ item }) => {
@@ -344,6 +415,7 @@ const Single = ({ item }) => {
                 items={item.images}
                 showPlayButton={false}
                 useBrowserFullscreen={false}
+                lazyLoad={true}
               />
             </div>
           </div>
@@ -365,19 +437,23 @@ const Single = ({ item }) => {
               )}
             </p>
 
-            <span>
-              info: using a tunnel for live demo so a warning will pop up when
-              accessing the link, feel free to check the pics if you don't trust
-              it
-            </span>
+            {item.tunnel && (
+              <span>
+                info: using a tunnel for live demo so a warning will pop up when
+                accessing the link, feel free to check the pics if you don't
+                trust it
+              </span>
+            )}
 
             <div className="btnCont">
               <a href={item.ghlink} target="_blank">
                 <button>Source Code</button>
               </a>
-              <a href={item.tunnel} target="_blank">
-                <button>Live Demo</button>
-              </a>
+              {item.tunnel && (
+                <a href={item.tunnel} target="_blank">
+                  <button>Live Demo</button>
+                </a>
+              )}
             </div>
           </motion.div>
         </div>

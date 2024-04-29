@@ -42,8 +42,11 @@ const About = () => {
         whileInView="animate"
       >
         <p>
-          A fresh Computer Science graduate from <span>PSUT</span>, participated
-          in ACM student chapter and co-opened a photography club
+          A fresh Computer Science graduate from{" "}
+          <a href="https://psut.edu.jo/" target="_blank">
+            PSUT
+          </a>
+          , participated in ACM student chapter and co-opened a photography club
         </p>
         <span>
           I code, game, take pictures from time to time, and may have 4k songs
@@ -65,7 +68,7 @@ const About = () => {
           </motion.span>
           <motion.li variants={rightvariants}>HTML/CSS/SCSS</motion.li>
           <motion.li variants={rightvariants}>Javascript/NodeJS</motion.li>
-          <motion.li variants={rightvariants}>ReactJS</motion.li>
+          <motion.li variants={rightvariants}>React/React Native</motion.li>
           <motion.li variants={rightvariants}>C++</motion.li>
           <motion.li variants={rightvariants}>SQL</motion.li>
           <motion.span variants={rightvariants}>
