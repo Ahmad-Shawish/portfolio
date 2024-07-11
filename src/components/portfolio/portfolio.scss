@@ -64,37 +64,37 @@
           width: 100%;
         }
 
-        // .primary {
-        //   padding-top: 85px;
-        //   width: 100%;
-        //   height: 100%;
-        //   .prmImg {
-        //     width: 100%;
-        //     height: 100%;
-        //     object-fit: contain;
+        .primary {
+          padding-top: 85px;
+          width: 100%;
+          height: 100%;
+          .prmImg {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
 
-        //     @include mobile {
-        //       object-fit: contain;
-        //     }
-        //   }
-        // }
+            @include mobile {
+              object-fit: contain;
+            }
+          }
+        }
 
-        // .secondary {
-        //   width: 100%;
-        //   // overflow: hidden;
-        //   .scrlcont {
-        //     // width: 50%;
-        //     display: flex;
-        //     overflow-x: scroll;
-        //     .scndImg {
-        //       margin-left: 4px;
-        //       width: 120px;
-        //       height: 80px;
-        //       cursor: pointer;
-        //       object-fit: contain;
-        //     }
-        //   }
-        // }
+        .secondary {
+          width: 100%;
+          // overflow: hidden;
+          .scrlcont {
+            // width: 50%;
+            display: flex;
+            overflow-x: scroll;
+            .scndImg {
+              margin-left: 4px;
+              width: 120px;
+              height: 80px;
+              cursor: pointer;
+              object-fit: contain;
+            }
+          }
+        }
       }
 
       .textContainer {

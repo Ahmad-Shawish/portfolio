@@ -23,7 +23,7 @@
     gap: 50px;
 
     @include mobile {
-      //   gap: 65px;
+      gap: 20px;
       justify-content: center;
       //   flex-direction: row;
     }
@@ -33,7 +33,7 @@
       line-height: 70px;
 
       @include mobile {
-        font-size: 25px;
+        font-size: 18px;
         line-height: 30px;
       }
 
@@ -44,7 +44,7 @@
           color: lightskyblue;
         }
         @include mobile {
-          font-size: 25px;
+          font-size: 18px;
         }
       }
     }
@@ -52,7 +52,7 @@
     span {
       font-size: 40px;
       @include mobile {
-        font-size: 20px;
+        font-size: 16px;
       }
     }
   }
