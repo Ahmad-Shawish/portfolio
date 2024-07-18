@@ -32,6 +32,10 @@
       font-size: 50px;
       line-height: 70px;
 
+      @include tablet {
+        font-size: 42px;
+        line-height: 50px;
+      }
       @include mobile {
         font-size: 18px;
         line-height: 30px;
@@ -43,6 +47,9 @@
         &:hover {
           color: lightskyblue;
         }
+        @include tablet {
+          font-size: 42px;
+        }
         @include mobile {
           font-size: 18px;
         }
@@ -51,6 +58,9 @@
 
     span {
       font-size: 40px;
+      @include tablet {
+        font-size: 36px;
+      }
       @include mobile {
         font-size: 16px;
       }
@@ -93,11 +103,15 @@
       //   }
 
       span {
-        font-size: 40px;
+        // font-size: 40px;
+        font-size: 2.5rem;
         text-align: center;
         display: flex;
         color: orange;
 
+        @include tablet {
+          font-size: 38px;
+        }
         @include mobile {
           font-size: 24px;
         }
@@ -113,12 +127,18 @@
 
       li {
         list-style-type: none;
-        font-size: 32px;
+        // font-size: 32px;
+        font-size: 2rem;
         line-height: 55px;
         text-align: right;
         // display: flex;
         // width: 500px;
 
+        @include tablet {
+          font-size: 28px;
+          line-height: 45px;
+          text-align: center;
+        }
         @include mobile {
           font-size: 20px;
           line-height: 31px;

@@ -15,12 +15,16 @@
 
     @include mobile {
       padding-top: calc(100vh - 100px);
-      font-size: 24px;
+      font-size: 20px;
     }
 
     .progressBar {
       height: 10px;
       background-color: white;
+
+      @include mobile {
+        height: 7px;
+      }
     }
   }
 
@@ -41,29 +45,105 @@
       justify-content: center;
       gap: 50px;
 
+      @include tablet {
+        width: 95%;
+      }
       @include mobile {
         flex-direction: column;
+        gap: 20px;
       }
 
       .imageContainer {
         width: 50%;
         flex: 1;
         height: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 8px;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // flex-direction: column;
+        // gap: 8px;
+
+        // background-color: aqua;
 
         @include mobile {
-          width: 55%;
-          max-height: 300;
-        }
-
-        .imgcont {
           width: 100%;
+          height: 350px;
+          // background-color: aqua;
         }
 
+        //USING react-image-gallery PACKAGE
+        // .packImgCont {
+        //   width: 100%;
+
+        //   @include mobile {
+        //     width: 100%;
+        //     height: 100%;
+        //     // display: flex;
+        //     // align-items: center;
+        //     // justify-content: center;
+        //     // flex-direction: column;
+        //     background-color: #fafafafa;
+        //   }
+
+        //   .imgGal {
+        //     width: 100%;
+        //     @include mobile {
+        //       // display: flex;
+        //       // align-items: center;
+        //       // justify-content: center;
+        //       // flex-direction: column;
+        //       // gap: 10px;
+        //       width: 95%;
+        //       height: 80%;
+        //       // overflow: hidden;
+        //       background-color: red;
+        //     }
+        //     .orgImg {
+        //       @include mobile {
+        //         width: 100%;
+        //         // height: 15%;
+        //       }
+        //     }
+
+        //     .thumbImg {
+        //       height: 50px;
+        //     }
+        //   }
+        // }
+
+        //USING react-responsive-carousel
+        .carCont {
+          width: 100%;
+          height: 100%;
+          // background-color: red;
+          // display: flex;
+          // align-items: center;
+          // justify-content: center;
+          .car {
+            width: 100%;
+            height: 100%;
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center;
+            // justify-content: center;
+            .carDiv {
+              width: 100%;
+              height: 100%;
+              // background-color: yellow;
+              // display: flex;
+              // justify-content: start;
+              // align-items: start;
+              // flex-direction: column;
+              .carImg {
+                width: 100%;
+                height: 450px;
+                object-fit: contain;
+              }
+            }
+          }
+        }
+
+        //WITHOUT ANY PACKAGE
         .primary {
           padding-top: 85px;
           width: 100%;
@@ -102,13 +182,14 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+        // background-color: purple;
 
         @include mobile {
           transform: none !important;
           padding: 5px;
           align-items: center;
           text-align: center;
-          width: 55%;
+          width: 100%;
           gap: 20px;
         }
 
@@ -141,6 +222,7 @@
           // flex-wrap: wrap;
           align-items: center;
           gap: 10px;
+          z-index: 10;
           a {
             width: 200px;
             @include mobile {

@@ -2,10 +2,12 @@ import { useRef } from "react";
 // import { useState } from "react";
 import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import ImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/scss/image-gallery.scss";
+// import ImageGallery from "react-image-gallery";
+// import "react-image-gallery/styles/scss/image-gallery.scss";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
-import { newItems as items } from "../../items.js";
+import { newItemsPack2 as items } from "../../items.js";
 
 const Single = ({ item }) => {
   const ref = useRef();
@@ -17,81 +19,64 @@ const Single = ({ item }) => {
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   // const [prmImg, setPrmImg] = useState(item.images.img1);
+  // const [prmImg, setPrmImg] = useState(item.images[0]);
 
   return (
     <section>
       <div className="container">
         <div className="wrapper">
           <div className="imageContainer" ref={ref}>
+            {/* WITHOUT ANY PACKAGE */}
             {/* <div className="primary">
               <img src={prmImg} alt="" className="prmImg" />
             </div>
             <div className="secondary">
               <div className="scrlcont">
-                <img
+                {item.images.map((img, i) => (
+                  <div key={i}>
+                    <img
+                      src={img}
+                      alt=""
+                      className="scndImg"
+                      onClick={() => setPrmImg(item.images[i])}
+                    />
+                  </div>
+                ))} */}
+            {/* <img
                   src={item.images.img1}
                   alt=""
                   className="scndImg"
                   onClick={() => setPrmImg(item.images.img1)}
-                />
-                <img
-                  src={item.images.img2}
-                  alt=""
-                  className="scndImg"
-                  onClick={() => setPrmImg(item.images.img2)}
-                />
-                <img
-                  src={item.images.img3}
-                  alt=""
-                  className="scndImg"
-                  onClick={() => setPrmImg(item.images.img3)}
-                />
-                <img
-                  src={item.images.img4}
-                  alt=""
-                  className="scndImg"
-                  onClick={() => setPrmImg(item.images.img4)}
-                />
-                <img
-                  src={item.images?.img5}
-                  alt=""
-                  className="scndImg"
-                  onClick={() => setPrmImg(item.images.img5)}
-                />
-                <img
-                  src={item.images?.img6}
-                  alt=""
-                  className="scndImg"
-                  onClick={() => setPrmImg(item.images.img6)}
-                />
-                <img
-                  src={item.images?.img7}
-                  alt=""
-                  className="scndImg"
-                  onClick={() => setPrmImg(item.images.img7)}
-                />
-                <img
-                  src={item.images?.img8}
-                  alt=""
-                  className="scndImg"
-                  onClick={() => setPrmImg(item.images.img8)}
-                />
-                <img
-                  src={item.images?.img9}
-                  alt=""
-                  className="scndImg"
-                  onClick={() => setPrmImg(item.images.img9)}
-                />
-              </div>
+                /> */}
+            {/* </div>
             </div> */}
-            <div className="imgcont">
+
+            {/* 1ST PACKAGE (react-image-gallery) */}
+            {/* <div className="packImgCont">
               <ImageGallery
                 items={item.images}
                 showPlayButton={false}
                 useBrowserFullscreen={false}
                 lazyLoad={true}
                 // showThumbnails={false}
+                additionalClass="imgGal"
               />
+            </div> */}
+
+            {/* 2ND PACKAGE (react-responsive-carousel) */}
+            <div className="carCont">
+              <Carousel
+                // thumbWidth={50}
+                className="car"
+                showThumbs={false}
+                infiniteLoop={true}
+              >
+                {item.images.map((img, i) => (
+                  <div key={i} className="carDiv">
+                    <img src={img} alt="" className="carImg" />
+                  </div>
+                ))}
+              </Carousel>
             </div>
           </div>
           <motion.div className="textContainer" style={{ y }}>
